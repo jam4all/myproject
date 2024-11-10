@@ -10,7 +10,7 @@ jobs:
     - name: Setup PDM
       uses: pdm-project/setup-pdm@v4
       with:
-        python-version: 3.10  # Убедитесь, что версия Python актуальна
+        python-version: 3.9  # Убедитесь, что версия Python актуальна
         cache: true
     - name: Install tools
       run: pdm install
