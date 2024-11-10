@@ -15,10 +15,7 @@ jobs:
     - name: Install tools
       run: pdm install
     
-    - name: Install pytest
-      run: pdm add pytest --dev   # Явно добавляем pytest, если он еще не установлен
-
     - name: Run tests
-      run: python3 -m pytest tests/test_task.py
+      run: python3 tests/test_task.py
       env:
-        PYTHONPATH: ./src
+        PYTHONPATH: .
