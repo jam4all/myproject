@@ -17,4 +17,4 @@ jobs:
     
     - name: Run tests
       run: python3 tests/test_task.py
-env: {"PYTHONPATH": "."}
+      env: "PYTHONPATH": .
